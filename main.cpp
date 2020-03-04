@@ -1,6 +1,6 @@
 /*
 HANGMAN  - THE GAME
-Versão 1.0.0
+Versão 2.14.20
 
 O projeto visa desenvolver uma versão simples do Hangman Game 
 usando características da linguagem orientada a objetos como classe, encapsulamente além do uso de ponteiro.
