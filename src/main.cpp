@@ -34,6 +34,7 @@ int Forca::tamanho_palavra(char palavra[])
 		tam++;
 		i++;
 	}
+	cout << "tam: " << tam << endl;
 	return tam;
 }
 
@@ -89,28 +90,27 @@ void Forca::jogo()
 
 int main(int argc, char* argv[])
 {
-	Forca jogo;
-	Forca* j = &jogo;
+	Forca j;
 	
-	j->chances = 6;
-	j->acerto = 0;
-	j->i = 0;
-	j->tam = 0;
-	j->acerto = false;
+	j.chances = 6;
+	j.acertos = 0;
+	j.i = 0;
+	j.tam = 0;
+	j.acerto = false;
 	
 	cout << "Hangman - The Game" << endl << endl;
 	cout << "Informe a palavra secreta: ";
-	cin >> j->palavra;
+	cin >> j.palavra;
 	cout << "Dica: ";
-	cin >> j->dica;
+	cin >> j.dica;
 	
-	j->tamanho_palavra(j->palavra);
+	j.tamanho_palavra(j.palavra);
 	
 	system("cls");
 	
-	j->preenche_secreta();
+	j.preenche_secreta();
 	
-	j->jogo();
+	j.jogo();
 	
 	system("pause");
 	
